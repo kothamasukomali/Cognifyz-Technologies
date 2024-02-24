@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humburger Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" >
+    <link rel="stylesheet" href="./stylees.css">
+   
+</head>
+<body>
+    <nav>
+        <div class="logo"><h1>KK</h1></div>
+        <div class="open"><i class="fa-solid fa-bars"></i></div>
+        <ul class="mainmenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <div class="close"><i class="fa fa-times"></i></div>
+            <span class="icons">
+               <i class="fa-brands fa-google"></i>
+               <i class="fa-brands fa-facebook-f"></i>
+               <i class="fa-brands fa-twitter"></i>
+               <i class="fa-brands fa-github"></i>
+            </span>
+        </ul>
+    </nav>
+    <script>const menu=document.querySelector('.mainmenu');
+        const menu1=document.querySelector('.close');
+        const menus=document.querySelector('.open');
+        menus.addEventListener('click',displays);
+        menu1.addEventListener('click',close);
+        function displays(){
+            menu.style.display='flex';
+            menu.style.top='0';
+        }
+        function close(){
+            menu.style.top='-100%';
+        }</script>
+</body>
+</html>

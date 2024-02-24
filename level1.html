@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+          margin: 0;
+          padding: 0;
+        }
+        body{
+            background-color:aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 50vh;
+        }
+        h2{
+            margin:20px;
+            padding: 20px;
+            
+        }
+        #btn{
+            border-radius: 3px;
+            background-color: blue;
+            box-shadow: 4px 4px 7px 0px blue ;
+            border: solid 2px white;
+            padding: 10px;
+            font-size: 30px;
+            cursor: pointer;
+            outline: none;
+            color: white;
+            
+        }
+        #alte{
+            border-radius: 3px;
+            border: solid 2px black;
+            background-color: orange;
+            padding: 10px;
+            margin-left: 20px;
+            font-size: 30px;
+            cursor: pointer;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <button id="btn">Click Here</button>
+    <button id="alte">Greeting message</button>
+    <script>var bn=document.getElementById("btn")
+        bn.addEventListener('click',Change)
+        function Change(){
+        bn.style.backgroundColor="brown";
+        bn.style.boxShadow="4px 4px 7px 0px brown";
+        }
+        //Greeting message
+        let a=document.getElementById("alte")
+        a.addEventListener('click',message)
+        function message(){
+         let time=new Date();
+         let hour=time.getHours();
+         var greet;
+         if(hour<12)
+         greet="Good Morning";
+        else if(hour<18)
+         greet="Good Afternoon";
+        else
+         greet="Good Evening";
+        alert(greet);
+        }</script> 
+</body>
+</html>

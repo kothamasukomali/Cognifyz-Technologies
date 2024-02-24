@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 2px solid blueviolet;
+            background-color: aquamarine;
+               
+        }
+        body{
+        box-sizing: border-box;
+        }
+        #bm{
+            background-color: olive;
+            margin: 10px;
+            border:2px solid black;
+            border-radius:2px;
+            padding:2px;
+            
+        }
+        #first{
+            margin:10px
+        }
+        #second{
+            margin: 10px;
+        }
+  </style>
+</head>
+<body>
+    <h2>Basic Calculator</h2>
+    Enter Number1:<input type="text" id="first" placeholder="Enter Number1"><br>
+    Enter Number2:<input type="text" id="second" placeholder="Enter Number2"><br>
+    <button id="bm">Result</button>
+    <script>
+        let a=document.getElementById("bm")
+        a.addEventListener('click',add)
+        function add(){
+            let x=document.getElementById("first").value;
+            let y=document.getElementById("second").value;
+            let z=parseInt(x);
+            let m=parseInt(y);
+            let result=parseInt(z+m);
+            alert(result)
+        }
+    </script>
+</body>
+</html>

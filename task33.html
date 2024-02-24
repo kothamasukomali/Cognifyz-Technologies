@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        body{
+            background-color: aqua;
+        }
+        .slider{
+          overflow: hidden;
+          height: 1200px;
+          position: absolute;
+          margin: auto;
+          margin-top: 20px;
+        }
+        .img-slide2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: slide1 20s infinite ;
+        }
+        img{
+            height: 600px;
+            width:600px;
+            border-radius: 2px;
+            border:2px solid black;
+            display:block;
+            box-shadow:4px 7px  grey;
+            padding-right: 2px;
+        }
+      @keyframes slide1 {
+        0%{transform: translateX(0);}
+        25%{transform: translateX(0);}  
+        30%{transform: translateX(-50%);}
+        50%{transform: translateX(-100%);}
+        65%{transform: translateX(-150);}
+        70%{ransform: translateX(50%);}
+        75%{transform: translateX(100%);}
+        100%{transform: translateX(200%);}   
+      }
+
+    </style>
+</head>
+<body> 
+    <div class="slider">
+     <div class="img-slide2">
+        <img src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=2000">
+        <img src="https://wallpapers.com/images/hd/red-sunset-dadicpsu85pdw66r.jpg">
+        <img src="https://t4.ftcdn.net/jpg/05/50/61/75/360_F_550617518_Eu3U6kTl3mODPvnfTMFHQ88z1y5KNfNQ.jpg">
+        <img src="https://e0.pxfuel.com/wallpapers/891/574/desktop-wallpaper-full-wide-nature-i-beautiful-nature-birds-nature-thumbnail.jpg">
+        <img src="https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+        <img src="https://www.taylorguitars.com/sites/default/files/styles/hero_rotator_image/public/images/2022-04/Taylor-new-for-22-acoustic-hero.jpg.webp?itok=ZFMF0C-H">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/766/low-calorie-fruit-1516368847.jpg?crop=1xw:0.786xh;center,top&resize=1200:*">
+    </div>
+</div>
+</body>
+</html>
